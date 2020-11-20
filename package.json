@@ -1,0 +1,19 @@
+{
+  "name": "codecampus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahul1290/codecampus.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rahul1290/codecampus/issues"
+  },
+  "homepage": "https://github.com/rahul1290/codecampus#readme"
+}
