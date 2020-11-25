@@ -1,0 +1,95 @@
+body{
+    /*background-image: url('https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg');*/
+    background-image: url('background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: antiquewhite;
+    width: 80%;
+    position: relative;
+    left: 10%;
+}
+header > h1 {
+    color: whitesmoke;
+    background-color : #313224;
+    opacity: 0.6;
+    text-align: center;
+    padding: 30px;
+    border-radius: 50px;
+}
+
+header > h2 {
+    text-align: center;
+    color:#ff9b35;
+    text-shadow: black 5px 5px 5px;
+}
+
+h3 {
+    color:#ff9b35;
+    background-color: blanchedalmond;
+    padding: 6px;
+    border-radius: 20px;
+}
+
+section abbr{
+    border-bottom: none !important;
+  cursor: inherit !important;
+  text-decoration: none !important;
+}
+
+a {
+    border-bottom: none !important;
+   
+    text-decoration: none !important;
+}
+
+.intro > .summary{
+    text-align: center;
+    color:#95cdd9;
+    border-bottom: dotted 4px;
+}
+
+#zen-participation,#zen-preamble,#zen-requirements {
+    position: relative;
+    width: 50%;
+    height: 200px;
+    text-align: justify;
+}
+
+#zen-requirements {
+    height: 500px;
+}
+
+#zen-explanation,#zen-benefits {
+    position: relative;
+    width: 50%;
+    left: 50%;
+    height: 200px;
+    text-align: justify;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    left: 44%;
+}
+
+footer a {
+    padding: 5px;
+    color: white;
+}
+footer a:hover{
+    padding: 5px;
+    background-color: whitesmoke;
+    color: tomato;
+    border-radius: 5px;
+}
+
+aside li a{
+    color: antiquewhite;
+}
+
+aside h3 {
+    background-color: transparent;
+    padding: 6px;
+    border-radius: 20px;
+}
