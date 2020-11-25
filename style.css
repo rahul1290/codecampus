@@ -48,30 +48,48 @@ a {
     border-bottom: dotted 4px;
 }
 
-#zen-participation,#zen-preamble,#zen-requirements {
-    position: relative;
-    width: 50%;
-    height: 200px;
-    text-align: justify;
-}
+@media only screen and (min-width: 400px) {
+    #zen-participation,#zen-preamble,#zen-requirements {
+        text-align: justify;
+    }
+    
+    #zen-explanation,#zen-benefits {
+        text-align: justify;
+    }
 
-#zen-requirements {
-    height: 500px;
-}
+    footer {
+        position: absolute;
+        bottom: 0px;
+        left: 20%;
+    }
+  }
 
-#zen-explanation,#zen-benefits {
-    position: relative;
-    width: 50%;
-    left: 50%;
-    height: 200px;
-    text-align: justify;
-}
+  @media only screen and (min-width: 900px) {
+    #zen-participation,#zen-preamble,#zen-requirements {
+        position: relative;
+        width: 50%;
+        height: 200px;
+        text-align: justify;
+    }
 
-footer {
-    position: absolute;
-    bottom: 0px;
-    left: 44%;
-}
+    #zen-requirements {
+        height: 500px;
+    }
+
+    #zen-explanation,#zen-benefits {
+        position: relative;
+        width: 50%;
+        left: 50%;
+        height: 200px;
+        text-align: justify;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0px;
+        left: 44%;
+    }
+  }
 
 footer a {
     padding: 5px;
