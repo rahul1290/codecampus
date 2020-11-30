@@ -63,7 +63,7 @@ nav{
 	font-weight: bold;
 }
 
-li .active {
+.active {
 	color: #f77920;
 }
 
