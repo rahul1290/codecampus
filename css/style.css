@@ -1,6 +1,6 @@
 body{
     /*background-image: url('https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg');*/
-    background-image: url('background.png');
+    background-image: url('../img/background.png');
     background-repeat: no-repeat;
     background-size: cover;
     color: antiquewhite;
