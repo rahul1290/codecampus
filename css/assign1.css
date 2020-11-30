@@ -63,6 +63,10 @@ nav{
 	font-weight: bold;
 }
 
+li .active {
+	color: #f77920;
+}
+
 #menu li:hover {
 	color: #f77920;
 }
