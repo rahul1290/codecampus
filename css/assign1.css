@@ -1,0 +1,72 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+@font-face {
+	font-family: myFirstFont;
+	src: url(../font/Rubik-VariableFont_wght.woff);
+  }
+
+body {
+	#color : red;
+}
+
+#article{
+	position: relative;
+	text-align: center;
+	color: seashell;
+}
+#tagline{
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+	transform: translate(-50%, -50%);
+	font-weight: bold;
+}
+
+#tagline p:nth-child(2){
+	font-size: 4em;
+	margin: 14px 0px 14px 0px;
+}
+
+#tagline p:nth-child(3){
+	font-size: small;
+	margin: 0px 0px 20px 0px;
+}
+
+
+.btn{
+	font-weight: bold;
+	padding: 12px 30px 12px 30px;
+	background-color: transparent;
+	border: 3px solid whitesmoke;
+}
+
+.btn:hover{
+	background-color: whitesmoke;
+}
+
+nav{
+	background-color: black;
+	opacity: 0.7;
+	padding: 30px;
+	color: white;
+}
+
+#menu {
+	float: right;
+}
+#menu li {
+	display: inline;
+	float: left;
+	padding: 0px 15px 0px 15px;
+	font-weight: bold;
+}
+
+#menu li:hover {
+	color: #f77920;
+}
+
+#navbar-header{
+	font-size: x-large;
+}
