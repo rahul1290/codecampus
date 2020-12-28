@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Basics</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/styles/app.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Simple Interest Calculator</h1>
+    </header>
+
+    <div class="container">
+      <section id="simple-intrest" class="col-sm-offset-3 col-xs-12 col-sm-6">
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label for="input-principal" class="col-sm-2 control-label">Principal</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="input-principal" placeholder="Amount">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="input-rate" class="col-sm-2 control-label">Rate</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="input-rate" placeholder="%">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="input-time" class="col-sm-2 control-label">Time</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="input-time" placeholder="Time">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="button" id="btn-si" class="btn btn-default">Calculate SI</button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <h5>Total Interest: <span id="input-si">0</span></h5>
+              <h5>Total Value: <span id="input-total">0</span></h5>
+            </div>
+          </div>
+        </form>
+      </section>  
+    </div>
+    
+    <script src="assets/scripts/vendor.js"></script>
+    <script src="assets/scripts/app.js"></script>
+  </body>
+</html>

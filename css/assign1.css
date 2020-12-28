@@ -11,6 +11,12 @@ body {
 	#color : red;
 }
 
+header{
+	position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
 #article{
 	position: relative;
 	text-align: center;
@@ -34,6 +40,19 @@ body {
 	margin: 0px 0px 20px 0px;
 }
 
+#tagline > ul {
+	display: inline-flex;
+}
+
+#tagline > ul > li:first-child{
+	list-style: none;
+}
+
+#tagline > ul > li > span {
+  position: relative;
+  margin:0px 7px 0px 5px;
+  left: -10px;
+}
 
 .btn{
 	font-weight: bold;
@@ -48,7 +67,7 @@ body {
 
 nav{
 	background-color: black;
-	opacity: 0.7;
+	opacity: 0.5;
 	padding: 30px;
 	color: white;
 }
