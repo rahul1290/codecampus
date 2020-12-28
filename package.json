@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/rahul1290/codecampus/issues"
   },
-  "homepage": "https://github.com/rahul1290/codecampus#readme"
+  "homepage": "https://github.com/rahul1290/codecampus#readme",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
 }

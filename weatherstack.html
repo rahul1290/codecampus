@@ -1,0 +1,29 @@
+const request = require('request');
+
+function weatherstack(city,callback){
+	url = 'http://api.weatherstack.com/current?access_key=0af06b12299f398b353b5a22b7a7b4d8&query='+city;
+	var data = [];
+	request({url,json:true}, function (error, response, body) {
+	console.log('===weatherstack===');
+	   console.log(`Location:${body.location.name},(${body.location.region})\nTemperature: ${body.current.temperature} at ${body.current.observation_time}`);
+	   
+	   data.push({['Location']: body.location.name});
+	   data.push({['Longitude']: body.location.lon});
+	   data.push({['Latitude']: body.location.lat});
+	   callback(data);
+	});
+}
+
+function mapbox(response){
+	console.log(response[0].Longitude);
+	return false;
+	url = 'https://api.mapbox.com/geocoding/v5/mapbox.places/'+ response[0].Location +'.json?proximity='+ response[0].Longitude+','+ response[0].Latitude +'&access_token=pk.eyJ1IjoicmFtMDgwNDAiLCJhIjoiY2tqODFyYm1kMWtodjJybnF2Y2lnYjc0dCJ9.1zjWuCRAjhUJjFjVnbCQgA';
+	console.log(url); 
+	return false;
+	request({url,json:true}, function (error, response, body) {
+		console.log('===mapbox===');
+	   console.log(`Longitude:${body.features[0].center[0]}\nLatitude:${body.features[0].center[1]}`)
+	});	
+}
+
+weatherstack('raipur',mapbox);
