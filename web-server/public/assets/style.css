@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  padding:0px;
+  margin:0px;
+}
+#menu input[type=text]{
+	padding: 10px;
+	border-radius: 22px;
+	width: 20%;
+}
+nav {
+	color:white;
+	text-align:center;
+	background-color:#123456;
+	padding:13px 0px 13px 0px;
+}
+#menu {
+	display: inline;
+}
+#menu > li {
+	display: inline;
+}
