@@ -1,4 +1,4 @@
-<html>
+  <html>
     <head>
 		<title>OMDB</title>
 		<link rel="stylesheet" href="assets/style.css" />
@@ -40,7 +40,7 @@
 					  </li>
 					</ul>
 					<form class="d-flex">
-					  <input class="form-control me-2" type="search" placeholder="Search" id="search" aria-label="Search">
+					  <input class="form-control me-2" type="search" placeholder="Search" value="batman" id="search" aria-label="Search">
 					  <button class="btn btn-outline-success" onclick="getMoviedetail()" type="button">Search</button>
 					</form>
 				  </div>
@@ -48,8 +48,8 @@
 			  </nav>
 		</header>
 		
-		<main class="container mt-4">
-			<div class="col-sm-6">
+		<main class="container mt-4" id="movieDetail" style="display: none;">
+			<div class="col-sm-8 offset-2">
 			  <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
 				<div class="col-auto d-none d-lg-block">
 				  <img id="poster" src="https://pbs.twimg.com/profile_images/619092297775345664/0d5opfK8_400x400.jpg" width="200" height="250" />
@@ -72,8 +72,8 @@
 						<td><span id="released"></span></td>
 					</tr>
 					<tr>
-						<td><table class="table table-bordered">
-							<tr>
+						<td colspan=2><table class="table table-bordered">
+							<tr class="bg-dark text-light">
 								<td colspan="2" class="text-center"><strong class="d-inline-block mb-1">Rating</strong></td>
 							</tr>
 							<tr>
@@ -110,14 +110,15 @@
 				fetch(url)
 				.then(response => response.json())
 				.then(response => {
+					document.getElementById('movieDetail').style.display = 'block';
 					document.getElementById('movieTitle').textContent  = response.Title;
 					document.getElementById('movieDuration').textContent  = response.Duration;
 					document.getElementById('released').textContent  = response.Released;
 					
 					document.getElementById('imdbRating').textContent  = response.ImdbRating;
 					document.getElementById('imdRating').textContent  = response.Rating[0]['value'];
-					document.getElementById('rtRating').textContent  = response.Rating[0].value;
-					document.getElementById('mRating').textContent  = response.Rating[0].value;
+					document.getElementById('rtRating').textContent  = response.Rating[0]['value'];
+					document.getElementById('mRating').textContent  = response.Rating[0]['value'];
 					
 					document.getElementById("poster").src = response.Poster;
 					
