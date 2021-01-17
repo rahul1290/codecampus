@@ -3,11 +3,12 @@ const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 const omdb = require('./utils/omdb')
 const path = require('path');
-const cors = require('cors')
+const cors = require('cors');
 const app = express();
 const publicDirPath = path.join(__dirname, './../public');
 
 app.use('/static', express.static(publicDirPath));
+
 const corsOptions = {
     origin: 'http://localhost:3000',
     optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
